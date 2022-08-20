@@ -90,9 +90,9 @@ fun main(){
      while (number != 0 && true || false){
          println(--number)
      }*/
-    var number: Int
+    var number: Byte
     do{
         print("Enter any number: ")
-        number = scanner.nextInt()
-    }while(number != 0)
+        number = scanner.nextByte()
+    }while(number != 0.toByte())
 }

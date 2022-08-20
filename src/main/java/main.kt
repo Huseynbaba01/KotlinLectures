@@ -1,3 +1,5 @@
+import java.util.Scanner
+
 /*
 import java.util.*
 
@@ -22,3 +24,12 @@ object Main {
         print(roads)
     }
 }*/
+fun main() {
+    var x = ArrayList<String>()
+    var y = mutableListOf<String>()
+    val scanner = Scanner(System.`in`)
+    val a = scanner.nextDouble()
+    val b = scanner.nextDouble()
+    val c = scanner.nextDouble()
+    print(String.format("%.4f %.4f %.4f", a + b, a + c, b + c))
+}
