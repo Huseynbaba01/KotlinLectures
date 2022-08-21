@@ -9,6 +9,7 @@ fun main() {
 //    val myArray: Array<Int> = arrayOf(12,2)
     //1 1 2 3 5 8 13 21 34 ...
     val scanner = Scanner(System.`in`)
+    val myList = mutableListOf<String>()
 //    val n = scanner.nextInt()
 //    val fibonacci = Array(n) { 0 }
 //    fibonacci[0] = 1
@@ -46,7 +47,7 @@ fun main() {
     val myTreeSet = TreeSet<Any>()
     for (i in 1..5) {
         if (i % 2 == 0) {
-            scanner.nextLine()
+            scanner.next()
             myTreeSet.add(scanner.nextInt())
         } else myTreeSet.add(scanner.next())
     }
