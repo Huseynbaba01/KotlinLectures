@@ -15,14 +15,14 @@ fun main(){
             sayi = 0
         }
     }*/
-    var a = 5
+/*    var a = 5
     var b = 3
 
     a = a +b // a = 8
     b = a - b // b = 5 a = 8
     a = a - b
 
-    print("a = $a  --  b = $b")
+    print("a = $a  --  b = $b")*/
 
     //  b = 5  a = 3
 }
