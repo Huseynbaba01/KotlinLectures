@@ -1,0 +1,5 @@
+class lesson6class {
+
+
+
+}
