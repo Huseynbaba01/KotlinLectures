@@ -1,0 +1,80 @@
+import java.util.Scanner
+import kotlin.math.pow
+import kotlin.math.sqrt
+
+// task1 https://www.eolymp.com/en/problems/1
+/*fun main(){
+    val myScan = Scanner(System.`in`)
+    var num=myScan.nextInt()
+    var b =num/10
+   var a = num%10
+
+    println ("$b $a")
+
+}*/
+
+/*
+task 2:https://www.eolymp.com/az/problems/2
+fun main (){
+val read=Scanner(System .`in`)
+    var a=read.nextInt()
+    var b=a.toString()
+  println (b.length)
+
+}*/
+/*
+task3:https://www.eolymp.com/az/problems/4716
+fun main (){
+    val myScan =Scanner (System .`in`)
+    val a=myScan.nextInt()
+    val b =myScan.nextInt()
+    println (b/a)
+}*/
+/* task 5 https://www.eolymp.com/az/problems/519
+fun main(){
+    val scan=Scanner (System.`in`)
+    val a = scan.nextInt()
+    val b = scan.nextInt()
+    println ((a.toDouble().pow(2)+ b.toDouble().pow(2)).toInt())
+}*/
+/*
+task6: https://www.eolymp.com/az/problems/7460
+fun main(){
+
+    val scan =Scanner(System .`in`)
+    val a=scan.nextInt()
+    val b=scan.nextInt()
+    val c =scan.nextInt()
+    var d=a/c+b/c
+    println(d)
+}
+*/
+/*
+task 7:https://www.eolymp.com/az/problems/1607
+
+fun main (){
+    val scan=Scanner(System .`in`)
+    var a =scan.nextInt()
+    var b= a.toString()
+println(b.reversed())
+
+
+}*/
+
+
+//task 8:https://www.eolymp.com/az/problems/927
+/*
+fun main (){
+    val scan=Scanner(System .`in`)
+    var a=scan.nextInt()
+    var num=0
+
+    for (i in 1..a){
+        var b=scan.nextInt()
+        var c=scan.nextDouble()
+        if (c<50) {
+            num += b
+        }
+    }
+        println("$num")
+}*/
