@@ -1,4 +1,4 @@
-package solutions.lesson_5
+package solutions.lesson_5.by_vaqif
 
 import java.util.Scanner
 import kotlin.math.pow
