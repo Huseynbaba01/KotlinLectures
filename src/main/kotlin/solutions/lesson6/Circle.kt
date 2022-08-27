@@ -1,7 +1,5 @@
 package solutions.lesson6
 
-import java.lang.Math.sqrt
-import java.util.*
 import java.util.Scanner
 import kotlin.math.pow
 import kotlin.math.sqrt
@@ -29,7 +27,8 @@ class Circle {
 
 }
 
-fun main() {
+fun  main(){
 
+    Circle().rh()
 
 }
