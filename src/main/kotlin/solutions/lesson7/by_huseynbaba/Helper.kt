@@ -5,6 +5,10 @@ object Helper {
         return a + b
     }
 
+    fun add(a: Double, b: Double): Double{
+        return a + b
+    }
+
     fun subtract(a: Int, b: Int): Int {
         return a - b
     }
