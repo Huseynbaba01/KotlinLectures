@@ -9,7 +9,7 @@ fun main(){
     //exercise1()
     //exercise2()
     //exercise3()
-    //exercise4()--
+    //exercise4()
     //exercise5()
     //exercise6()--
     //exercise8()
@@ -53,6 +53,14 @@ fun exercise3(){
 
 fun exercise4() {
 
+    val n =scan.nextInt()
+    val list= mutableListOf<Int>()
+
+    for (i in 1..n){
+        list.add(scan.nextInt())
+    }
+
+    println(list.sum())
 
 
 }
