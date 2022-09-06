@@ -9,15 +9,61 @@ fun main(){
 
     //exercise1()
     //exercise2()
-    exercise3()
+    //exercise3()
+    exercise4()
+
+}
+
+fun exercise4() {
+
+    val a = scanner.nextInt()
+    val b = scanner.nextInt()
+
+
+    val list = arrayListOf(1,2,3,4,5,6,7,8,9)
+    val listSub = arrayListOf(a,b)
+    for ( listSub in list) {
+        println(listSub)
+    }
+}
+enum class CarType{
+    Sedan,
+    Jeep
+}
+
+class Car(carType: CarType , model: String) {
+
+
+
+
+}
+fun sth(){
+    val newCars = Car(CarType.Sedan , "Mercedes")
+    val newCars2 = Car(CarType.Jeep, "Mercedes")
+
+    val list = listOf(newCars , newCars2)
+    list.forEach{
+
+    }
 }
 
 fun exercise3() {
 
-    val a = scanner.nextInt()
+        var cem :Double = 0.0
+        var hasil: Double = 1.0
+        val  scan = Scanner(System.`in`)
 
+        print("Enter a number: ")
+        var num = scan.nextInt()
 
-
+        while (num > 0){
+            val qaliq = num % 10
+            cem += qaliq
+            hasil *= num % 10
+            num /= 10
+        }
+        val cavab : Double = hasil / cem
+        print(cavab)
 
 }
 fun exercise2() {
@@ -31,7 +77,7 @@ fun exercise2() {
     //a= students.size
 
     for (i in students) {
-        if (i < 31) {
+        if (i < 30) {
             ++count
         }
     }
