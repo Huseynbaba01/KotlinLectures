@@ -1,3 +1,5 @@
+package lesson2
+
 fun main(){
 /*    val scanner = Scanner(System.`in`)
     val name = scanner.next()

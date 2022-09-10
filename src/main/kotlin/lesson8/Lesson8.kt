@@ -9,3 +9,7 @@ abstract class ad{
     constructor()
 }
 
+class Lesson8 :Any(){
+
+}
+

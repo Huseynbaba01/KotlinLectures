@@ -1,3 +1,5 @@
+package solutions
+
 class Example {
     lateinit var name: String
     var number = 0
