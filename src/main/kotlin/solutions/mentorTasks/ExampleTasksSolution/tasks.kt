@@ -211,3 +211,8 @@ fun main(){
 
 }
 */
+
+fun main (){
+    var a="shshhs"
+    a.
+}
