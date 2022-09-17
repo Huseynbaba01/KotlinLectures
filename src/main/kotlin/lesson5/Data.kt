@@ -42,10 +42,15 @@ fun main() {
     myList.add(Int.MAX_VALUE)
     val mySecondList = arrayListOf<Int>()
     mySecondList.add(3)*/
+<<<<<<< HEAD
     /*val mySet = HashSet<Int>()
     mySet.add(4)*/
 
 
+=======
+    val mySet = HashSet<Int>()
+    mySet.add(4)
+>>>>>>> origin/master
     val myTreeSet = TreeSet<Any>()
     for (i in 1..5) {
         if (i % 2 == 0) {
