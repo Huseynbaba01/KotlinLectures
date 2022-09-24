@@ -56,6 +56,11 @@ class MyLinkedList<T> {
         }
     }
 
+
+    fun sortBy(){
+
+    }
+
 }
 
 data class Node<T>(var next: Node<T>? = null, var data: T)
