@@ -26,6 +26,10 @@ fun returnTriple(a: Int) = a*3
 
 class  MyNumber(var value: Int){
 
+    fun sth(r: Runnable){
+        r.run()
+    }
+
     operator fun plus(a: Int): Int{
         value += a
         return value
