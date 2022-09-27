@@ -8,7 +8,7 @@ fun main(){
 
     println("Size of movie list: ${movieList.size}")
 
-    println(movieList.clear())
+    movieList.printAll()
 
 }
 
