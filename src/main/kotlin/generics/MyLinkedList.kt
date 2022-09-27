@@ -17,6 +17,27 @@ class MyLinkedList<T> {
     var head: Node<T>? = null
     var size = 0
 
+    inline fun filterBy(predicate: (T) -> Boolean): ArrayList<T>{
+        var cNode = head
+        val list = ArrayList<T>()
+        while (cNode != null){
+            if(predicate(cNode.data)) list.add(cNode.data)
+            cNode = cNode.next
+        }
+
+        return list
+    }
+
+    fun filterBy(predicate: MyPredicate<T>): ArrayList<T>{
+        var cNode = head
+        val list = ArrayList<T>()
+        while (cNode != null){
+            if(predicate.checkIfTrue(cNode.data)) list.add(cNode.data)
+            cNode = cNode.next
+        }
+
+        return list
+    }
 
     fun add(data: T){
         if(size == 0) addFirst(data)
@@ -78,5 +99,20 @@ fun main(){
 
     myList.printAll()
 
+    val newList = myList.filterBy {
+    it.length
+        it.contains("n")
+    }
+
     println(myList.get(10))
+
+//    x<String>()
 }
+
+interface MyPredicate<T>{
+    fun checkIfTrue(t: T): Boolean
+}
+//
+//fun <T> x(){
+//    val a: T
+//}
