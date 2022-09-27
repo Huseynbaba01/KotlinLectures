@@ -1,3 +1,22 @@
+
+fun main(){
+    val movieList = MyLinkedList<String>()
+
+    movieList.add("Godfather")
+    movieList.add("Star Wars")
+    movieList.add("Fight Club")
+
+    println("Size of movie list: ${movieList.size}")
+
+    println(movieList.clear())
+
+}
+
+
+
+
+
+
 class MyLinkedList<T> {
     var firstNode: Node<T>? = null
     var size = 0
@@ -10,7 +29,7 @@ class MyLinkedList<T> {
     fun printAll(){
         var currentNode = firstNode
         while (currentNode != null){
-            println("item: "+ currentNode.data)
+            println("movies: "+ currentNode.data)
             currentNode = currentNode.next
         }
     }
@@ -135,6 +154,21 @@ class MyLinkedList<T> {
             addLast(a)
         }
     }
+    private fun addFirst(data: T){
+        firstNode = Node( data = data)
+        size++
+    }
+
+    private fun addLast(data: T){
+        var currentNode = firstNode
+
+        while(currentNode?.next != null){
+            currentNode = currentNode.next
+        }
+
+        currentNode!!.next = Node(data = data)
+        size++
+    }
 
     fun addAll(index: Int, items: List<T>){
         var currentNode = firstNode
@@ -248,24 +282,6 @@ class MyLinkedList<T> {
         firstNode = null
         size = 0
     }
-
-    private fun addFirst(data: T){
-        firstNode = Node( data = data)
-        size++
-    }
-
-    private fun addLast(data: T){
-        var currentNode = firstNode
-
-        while(currentNode?.next != null){
-            currentNode = currentNode.next
-        }
-
-        currentNode!!.next = Node(data = data)
-        size++
-    }
-
-
 }
 
 data class Node<T>(var next: Node<T>? = null, var data: T)
