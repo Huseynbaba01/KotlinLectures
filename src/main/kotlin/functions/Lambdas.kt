@@ -27,6 +27,24 @@ fun main(){
     val myFifthFun = second(4)
 
     myFourthFun(4)
+    myFourthFun.invoke(4)
+    mySecondFun.invoke(4, 5);
+
+
+    val sayHello: (String, String) -> Double = { s1, s2 ->
+        println("Hello, ")
+        0.7
+    }
+
+    fun sh2(s1: String, s2: String): Double{
+        println("Hello, ")
+        return 0.7
+    }
+
+
+
+    val sH = sayHello
+
 
 }
 
@@ -34,10 +52,14 @@ fun second(a: Int): Int{
     return 0
 }
 
-fun sth(){
-    println("ihssjs")
+fun sth(name: String){
+    println("Hello, $name")
 }
+
+fun sthSimple(name: String) = println("Hello, $name")
+
 
 val sth2 = {
     println("jkdndfnv")
 }
+

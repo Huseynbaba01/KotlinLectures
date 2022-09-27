@@ -11,6 +11,9 @@ class MyLinkedList<T> {
         val d = 0.5
         d.toInt()
     }*/
+
+
+
     var head: Node<T>? = null
     var size = 0
 
